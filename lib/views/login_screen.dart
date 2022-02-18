@@ -29,7 +29,27 @@ class LoginScreen extends StatelessWidget {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  border:OutlineInputBorder(),
+                  border:OutlineInputBorder(
+                    borderSide:BorderSide(
+                      color: Colors.pinkAccent,
+                      width: 5,
+                      style:BorderStyle.solid,
+                    ) ,
+                  ),
+                  enabledBorder:OutlineInputBorder(
+                    borderSide:BorderSide(
+                      color: Colors.pinkAccent,
+                      width: 5,
+                      style:BorderStyle.solid,
+                    ) ,
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                borderSide:BorderSide(
+                color: Colors.pinkAccent,
+                  width: 5,
+                  style:BorderStyle.solid,
+                ) ,
+              ),
                   hintText: "password",
                   prefixIcon: Icon(Icons.lock),
                 ),
